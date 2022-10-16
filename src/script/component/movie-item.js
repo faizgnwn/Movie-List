@@ -50,9 +50,9 @@ class MovieItem extends HTMLElement {
         }
         </style>
 
-        <img class="poster" src="${this._movie.poster}" alt="Movie Poster">
+        <img class="poster" src="${this._movie.poster_path}" alt="Movie Poster">
         <div class="movie-info">
-          <h2>${this._movie.name}</h2>
+          <h2>${this._movie.original_title}</h2>
           <p>${this._movie.overview}</p>
         </div>
       `;
