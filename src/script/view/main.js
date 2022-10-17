@@ -10,7 +10,7 @@ const main = () => {
     try {
       const result = await DataSource.searchMovie(searchElement.value);
       renderResult(result);
-    } catch {
+    } catch(message) {
       fallbackResult(message);
     }
   };
